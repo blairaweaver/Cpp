@@ -1,0 +1,13 @@
+all: A8p1 A8p2_u A8p2_n A8p2_s
+
+A8p1: A8p1.cpp
+	g++ A8p1.cpp -o A8p1
+	
+A8p2_u: A8p2_unixpipe.cpp
+	g++ A8p2_unixpipe.cpp -o A8p2_unixpipe
+
+A8p2_n: A8p2_namedpipe.cpp
+	g++ A8p2_namedpipe.cpp -o A8p2_namedpipe
+
+A8p2_s: A8p2_shm.cpp
+	g++ A8p2_shm.cpp -lrt -o A8p2_shm

@@ -1,0 +1,4 @@
+all: A7p4
+
+A7p4: A7p4.cpp
+	g++ A7p4.cpp -lpthread -o A7p4

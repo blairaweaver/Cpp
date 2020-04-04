@@ -1,0 +1,7 @@
+all: A4p2 A4p3
+
+A4p2 : A4p2.cpp
+	g++ A4p2.cpp -o A4p2
+
+A4p3 : A4p3.cpp
+	g++ A4p3.cpp -o A4p3

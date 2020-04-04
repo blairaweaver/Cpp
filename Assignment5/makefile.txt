@@ -1,0 +1,7 @@
+all: A5p4 A5p5
+
+A5p4: A5p4.cpp
+	g++ A5p4.cpp -o A5p4
+
+A5p5: A5p5.cpp
+	g++ A5p5.cpp -o A5p5

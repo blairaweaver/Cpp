@@ -1,0 +1,5 @@
+1. See A5p1.sh
+2. See A5p2.sh
+3. See A5p3.sh
+4. See A5p4.sh and A5p4.c
+5. See A5p5.sh, A5p5.cpp and makefile

@@ -1,0 +1,24 @@
+1.
+There is a race condition due to the fact that, even though there are mutex locks around the critical code that modifies the global variable, one of the update methods uses a different mutex variable than the rest. Because of this, it and one of the other update method can modify it at the same time.
+
+Possible Outputs:
+	a	a
+	b	b
+	a	b
+	b	a
+2.
+Due to this initialization of the semaphore using 2 for the 3rd parameter, this allows 2 threads to edit the critical sections of code that are flanked by semaphore. Due to this, there is a race condition.
+
+Possible Outputs:
+	a	a
+	b	b
+	a	b
+	b	a
+3.
+Since the value used as the 3rd parameter is 1, only one thread will be allowed to access the critical sections of code that modify the global variables. Due to this, there is no race conditions.
+
+Possible Outputs:
+	b	b
+
+5.
+The producer & consumer problem is cause when one thread uses the output of another thread, so the threads have to synced on when to give information or when to grab information. The readers-writers problems is an issue of data sync. When one is editing information, you don't want another to edit it or others to read it while it is being edited. The dining philosophers problem is an issue of limited resources available to threads.
