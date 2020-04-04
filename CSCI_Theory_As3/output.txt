@@ -1,0 +1,79 @@
+Type input string: if(var>20)a=b*5;
+---------------
+Symbol	| Type	
+---------------
+i	| i
+f	| f
+if	| Keyword
+(	|(
+v	| v
+a	| a
+r	| r
+var	| Variable
+>	| >
+>	| Comparison
+2	| 2
+0	| 0
+20	| Integer Constant
+)	| )
+a	| a
+a	| Variable
+=	| =
+=	| Assignment
+b	| b
+b	| Variable
+*	| *
+*	| Arithmetic Symbol
+5	| 5
+5	| Integer Constant
+;	| ;
+
+Type input string: if(var==50&&var2!=25)a=b*5/3;
+---------------
+Symbol	| Type	
+---------------
+i	| i
+f	| f
+if	| Keyword
+(	|(
+v	| v
+a	| a
+r	| r
+var	| Variable
+=	| =
+=	| =
+==	| Comparison
+5	| 5
+0	| 0
+50	| Integer Constant
+&	| &
+&	| &
+&&	| Logical
+v	| v
+a	| a
+r	| r
+2	| 2
+var2	| Variable
+!	| !
+=	| =
+!=	| Logical
+2	| 2
+5	| 5
+25	| Integer Constant
+)	| )
+a	| a
+a	| Variable
+=	| =
+=	| Assignment
+b	| b
+b	| Variable
+*	| *
+*	| Arithmetic Symbol
+5	| 5
+5	| Integer Constant
+/	| /
+/	| Arithmetic Symbol
+3	| 3
+3	| Integer Constant
+;	| ;
+
